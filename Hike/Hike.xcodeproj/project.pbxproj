@@ -15,6 +15,9 @@
 		EF18188F2B80BBC000194A5E /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF18188E2B80BBC000194A5E /* CustomBackgroundView.swift */; };
 		EF1818922B80C01B00194A5E /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1818912B80C01A00194A5E /* ColorExtension.swift */; };
 		EF2B3E472B8203CF00590216 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E462B8203CF00590216 /* CustomButtonView.swift */; };
+		EF2B3E492B84635100590216 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E482B84635100590216 /* GradientButtonStyle.swift */; };
+		EF2B3E4B2B8469B800590216 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E4A2B8469B800590216 /* CustomCircleView.swift */; };
+		EF2B3E4D2B846C7C00590216 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2B3E4C2B846C7C00590216 /* MotionAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		EF18188E2B80BBC000194A5E /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		EF1818912B80C01A00194A5E /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		EF2B3E462B8203CF00590216 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		EF2B3E482B84635100590216 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
+		EF2B3E4A2B8469B800590216 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
+		EF2B3E4C2B846C7C00590216 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 				EF18188B2B80BA5D00194A5E /* CardView.swift */,
 				EF18188E2B80BBC000194A5E /* CustomBackgroundView.swift */,
 				EF2B3E462B8203CF00590216 /* CustomButtonView.swift */,
+				EF2B3E4A2B8469B800590216 /* CustomCircleView.swift */,
+				EF2B3E4C2B846C7C00590216 /* MotionAnimationView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -91,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				EF1818912B80C01A00194A5E /* ColorExtension.swift */,
+				EF2B3E482B84635100590216 /* GradientButtonStyle.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -166,9 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF1818802B80AB5400194A5E /* ContentView.swift in Sources */,
+				EF2B3E4B2B8469B800590216 /* CustomCircleView.swift in Sources */,
 				EF18188C2B80BA5D00194A5E /* CardView.swift in Sources */,
 				EF18187E2B80AB5400194A5E /* HikeApp.swift in Sources */,
 				EF2B3E472B8203CF00590216 /* CustomButtonView.swift in Sources */,
+				EF2B3E492B84635100590216 /* GradientButtonStyle.swift in Sources */,
+				EF2B3E4D2B846C7C00590216 /* MotionAnimationView.swift in Sources */,
 				EF18188F2B80BBC000194A5E /* CustomBackgroundView.swift in Sources */,
 				EF1818922B80C01B00194A5E /* ColorExtension.swift in Sources */,
 			);

@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct CardView: View {
-    // MARK: - CARD
+    // MARK: - PROPERTIES
+    
+    @State private var imageNumber: Int = 1
+    @State private var randomNumber: Int = 1
+    
+    // MARK: - FUNCTIONS
+    
+    func randomImage() {
+        repeat {
+            randomNumber = Int.random(in: 1...5)
+        } while imageNumber == randomNumber
+        imageNumber = randomNumber
+    }
     var body: some View {
+        // MARK: - CARD
         ZStack {
             CustomBackgroundView()
             VStack {
@@ -48,24 +61,34 @@ struct CardView: View {
                 
                 // MARK: - MAIN CONTENT
                 ZStack {
-                    Circle()
-                        .fill(
-                            LinearGradient(
-                                colors: [
-                                    .colorIndigoMedium,
-                                    .colorSalmonLight
-                                ],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                        .frame(width: 256, height: 256)
-                    Image("image-1")
+                    CustomCircleView()
+                    Image("image-\(imageNumber)")
                         .resizable()
                         .scaledToFit()
+                        .animation(.easeOut(duration: 5), value: imageNumber)
                 }
                 
                 // MARK: - FOOTER
+                Button {
+                    // ACTION: Generate a random number
+                    print("the button was pressed")
+                    randomImage()
+                } label: {
+                    Text("Explore More")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [
+                                    .customGreenLight,
+                                    .customGreenMedium],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
+                }
+                .buttonStyle(GradientButton())
             } //: VSTACK
         } //: CARD
         .frame(width: 320, height: 570)
